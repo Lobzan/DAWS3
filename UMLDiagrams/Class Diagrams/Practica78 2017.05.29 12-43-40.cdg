@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica78">
+  <ClassDiagramComponents>
+    <Class name="triangulo" package="practica78" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="base" type="double" visibility="package"/>
+        <Field name="altura" type="double" visibility="package"/>
+        <Field name="resultado" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="SetArea" returnType="void" visibility="public">
+          <Argument type="double" name="base"/>
+          <Argument type="double" name="altura"/>
+        </Method>
+        <Method name="GetResultado" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica78" package="practica78" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

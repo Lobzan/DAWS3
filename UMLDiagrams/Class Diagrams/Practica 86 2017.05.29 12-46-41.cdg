@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica 86">
+  <ClassDiagramComponents>
+    <Class name="Menu" package="practica.pkg86" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="teclado" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ShowM0" returnType="void" visibility="public"/>
+        <Method name="ShowM" returnType="void" visibility="public"/>
+        <Method name="ReadOpt" returnType="int" visibility="public"/>
+        <Method name="ReadNum" returnType="int" visibility="public"/>
+        <Method name="ReadChar" returnType="char" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Contador" package="practica.pkg86" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="teclado" type="Scanner" visibility="package"/>
+        <Field name="count" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="n"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Contador" name="copia"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getCount" returnType="int" visibility="public"/>
+        <Method name="setCount" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="incCount" returnType="void" visibility="public"/>
+        <Method name="decCount" returnType="void" visibility="public"/>
+        <Method name="resetCount" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica86" package="practica.pkg86" visibility="public" xPosition="20.0" yPosition="235.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

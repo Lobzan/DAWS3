@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica 77">
+  <ClassDiagramComponents>
+    <Class name="Menu" package="practica.pkg77" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="Menu" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="areacalc" package="practica.pkg77" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="radio" type="double" visibility="package"/>
+        <Field name="resultarea" type="double" visibility="package"/>
+        <Field name="resultlong" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="radio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="GetArea" returnType="double" visibility="public"/>
+        <Method name="GetLong" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica77" package="practica.pkg77" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
