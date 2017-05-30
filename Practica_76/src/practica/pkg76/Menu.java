@@ -12,15 +12,14 @@ import java.util.Scanner;
  * @author Luis Gordo - alu20486860r@ieselcaminas.org
  */
 public class Menu {
-    
-    
-Scanner teclado = new Scanner(System.in);
 
+    Scanner teclado = new Scanner(System.in);
+    int estado;
 
-public void Instructions() {
+    public void Instructions() {
 
         System.out.println("Entre los numeros y las operaciones pulsa enter");
-    System.out.println("+  Suma");
+        System.out.println("+  Suma");
         System.out.println("-  Resta");
         System.out.println("x  Multi");
         System.out.println("/   Dividir");
@@ -28,49 +27,58 @@ public void Instructions() {
         System.out.println("i  instrucciones");
         System.out.println("m  menu");
         System.out.println("l  limpiar");
-         System.out.println("------------------");
-    }    
+        System.out.println("------------------");
+    }
 
-public void Menu() {
+    public void Menu() {
 
         System.out.println("1. Instrucciones");
         System.out.println("2. Operar");
         System.out.println("3. Salir");
         System.out.println("------------------");
-}
+    }
 
     public int ReadOpt() {
-        
+
         return teclado.nextInt();
 
     }
-    
+
     public void AskNum() {
         System.out.println("Ya puedes calcular");
     }
-    
+
     public void AskOperator() {
         char operator = teclado.next().charAt(0);
-        int estado;
-        switch (operator)  {
-            case '+': 
-               
-                
-            break;
-            case '-': 
+        this.estado = estado;
+        switch (operator) {
+            case '+':
+                estado = 1;
+                break;
+            case '-':
                 estado = 2;
-            break;
-            case '/': 
+                break;
+            case 'x':
                 estado = 3;
-            break;
-            return
-            
+                break;
+            case '/':
+                estado = 4;
+                break;
+            case '%':
+                estado = 5;
+                break;
         }
+       
+    }
+    
+    public int getEstado() {
+
+        return estado;
     }
 
     public int ReadNum() {
-        
+
         return teclado.nextInt();
     }
-    
+
 }

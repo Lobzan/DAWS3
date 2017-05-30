@@ -9,9 +9,9 @@ import java.util.Scanner;
 /** * * @author Luis Gordo - alu20486860r@ieselcaminas.org */
 public class Calc {
 
-    private int num1;
-    private int num2;
-    private int result;
+    public int num1;
+    public int num2;
+    public int result;
 
     public void SetNum1(int num1) {
 

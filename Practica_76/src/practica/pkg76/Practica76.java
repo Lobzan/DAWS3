@@ -18,11 +18,13 @@ public class Practica76 {
 
         int num1;
         int num2;
-        boolean entrar = true;
+
         Calc Cal = new Calc();
         Menu m = new Menu();
-        
-        while (entrar == true) {   
+
+        boolean entrar = true;
+
+        while (entrar == true) {
             m.Menu();
 
             switch (m.ReadOpt()) {
@@ -36,14 +38,34 @@ public class Practica76 {
                     m.AskOperator();
                     num2 = m.ReadNum();
                     Cal.SetNum2(num2);
-                    
-                    System.out.println("La suma es " + Cal.GetResult());
+                    switch (m.getEstado()) {
+                        case 1:
+                            Cal.Add();
+                            System.out.println("La suma es " + Cal.GetResult());
+                            break;
+                        case 2:
+                            Cal.Subs();
+                            System.out.println("La resta es " + Cal.GetResult());
+                            break;
+                        case 3:
+                            Cal.Mult();
+                            System.out.println("La multiplicacion es " + Cal.GetResult());
+                            break;
+                        case 4:
+                            Cal.Div();
+                            System.out.println("La diviison es " + Cal.GetResult());
+                            break;
+                        case 5:
+                            Cal.Mod();
+                            System.out.println("El modulo es " + Cal.GetResult());
+                            break;
+                    }
                     break;
+
                 case 3:
                     System.out.println("Saliendo");
                     entrar = false;
                     break;
-            
 
             }
 

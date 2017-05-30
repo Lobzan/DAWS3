@@ -4,29 +4,25 @@
  * and open the template in the editor.
  */
 package practica85;
+
+import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Menu {
-
+    
     Scanner teclado = new Scanner(System.in);
+    
+    private ArrayList<String> options = new ArrayList<>();
 
-    public void ShowM1() {
-        System.out.println("1. Ingreso");
-        System.out.println("2. Reintegro");
-        System.out.println("3. Transferencia");
-        System.out.println("4. Ver Info");
-        System.out.println("5. Modificar Info");
-        System.out.println("6. Salir");
+    public Menu(ArrayList<String> options) {
+        this.options = options;
     }
 
-    public void ShowM2() {
-        System.out.println("1. Nombre");
-        System.out.println("2. Apellido1");
-        System.out.println("3. Apellido2");
-        System.out.println("4. DNI");
-        System.out.println("5. Volver");
+    public ArrayList<String> getOptions() {
+        return options;
     }
-
+        
     public int ReadOpt() {
         return teclado.nextInt();
     }
@@ -34,4 +30,5 @@ public class Menu {
     public int ReadNum() {
         return teclado.nextInt();
     }
+
 }

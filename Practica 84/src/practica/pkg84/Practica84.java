@@ -6,8 +6,13 @@ public class Practica84 {
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-        Cuenta C1 = new Cuenta("Luis", "Gordo", "Soldevila", "12345678", "Corriente", 01, 0.01, 1500);
-        Cuenta C2 = new Cuenta("Lean", "Calviño", "Galli", "45612345", "Ahorros   ", 02, 0.10, 1000);
+        Account C1 = new Account("Luis", "Gordo", "Soldevila", "12345678", "Corriente", 01, 0.01, 1500);
+        System.out.println(C1.toString()); 
+        Account x = new Account(C1);
+        x.setName("pol");
+        System.out.println(x.toString());
+        
+        Account C2 = new Account("Lean", "Calviño", "Galli", "45612345", "Ahorros   ", 02, 0.10, 1000);
         boolean menu1 = true;
         boolean menu2;
         Menu M = new Menu();
@@ -16,18 +21,18 @@ public class Practica84 {
             switch(M.ReadOpt()) {
                 case 1:
                     System.out.println("¿Cantidad a ingresar?");
-                    C1.setIngreso(M.ReadNum());
+                    C1.setDeposit(M.ReadNum());
                     break;
                 case 2:
                     System.out.println("¿Cantidad a retirar?");
-                    C1.setReintegro(M.ReadNum());
+                    C1.setCharge(M.ReadNum());
                     break;
                 case 3:
                     System.out.println("¿Cantidad a transferir?");
-                    C1.setTransferencia(C2, M.ReadNum());
+                    C1.doTransfer(C2, M.ReadNum());
                     break;
                 case 4:
-                    System.out.println("Señor " + C1.getApellido1() + " su cuenta " + C1.getTipo() + " con numeración " + C1.getN_cuenta() + " tiene un saldo de " + C1.getSaldo() + " €");
+                    System.out.println("Señor " + C1.getFirstSurname() + " su cuenta " + C1.getType() + " con numeración " + C1.getAccountNumber() + " tiene un saldo de " + C1.getCredit() + " €");
                     System.out.println("");
                     break;
                 case 5:
@@ -37,13 +42,13 @@ public class Practica84 {
                         M.ShowM2();
                         switch(M.ReadOpt()) {
                             case 1:
-                                C1.setNombre(teclado.nextLine());
+                                C1.setName(teclado.nextLine());
                                 break;
                             case 2:
-                                C1.setApellido1(teclado.nextLine());
+                                C1.setFirstSurname(teclado.nextLine());
                                 break;
                             case 3:
-                                C1.setApellido2(teclado.nextLine());
+                                C1.setSecondSurname(teclado.nextLine());
                                 break;
                             case 4:
                                 C1.setDni(teclado.nextLine());
