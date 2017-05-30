@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica.pkg77;
+package practica.pkg79;
 
 /**
  *
@@ -11,16 +11,18 @@ package practica.pkg77;
  */
 public class areacalc {
 
-    double radio;
+    double base;
+    double altura;
+    
     double resultarea;
-    double resultlong;
+    
 
 
-    public areacalc(double radio) {
+    public areacalc(double base, double altura) {
 
-        this.radio = radio;
-        this.resultlong = (2 * Math.PI * radio);
-        this.resultarea = (Math.pow(radio, 2) * Math.PI);
+        this.base = base;
+        this.altura = altura;        
+        this.resultarea = (base*altura/2);
 
     }
    
@@ -28,8 +30,5 @@ public class areacalc {
         return resultarea;
     }
 
-    public double GetLong() {
-        return resultlong;
-    }
-
+   
 }
