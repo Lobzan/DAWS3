@@ -1,6 +1,6 @@
 package practica78;
 
-public class triangulo {
+public class Areacalc {
 
     double base;
 
@@ -8,13 +8,13 @@ public class triangulo {
 
     double resultado;
 
-    public void SetArea(double base, double altura) {
+    public void setArea(double base, double altura) {
         this.base = base;
         this.altura = altura;
         this.resultado = (base * altura) / 2;
     }
 
-    public double GetResultado() {
+    public double getResultado() {
         return resultado;
     }
 }
