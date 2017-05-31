@@ -20,11 +20,12 @@ public class Practica86 {
 
         Scanner teclado = new Scanner(System.in);
         Menu M = new Menu();
-        boolean menu1 = true;
+        boolean menu1;
         boolean menu0 = true;
         Contador i = new Contador();
 
         while (menu0 == true) {
+            menu1 = true;
             M.ShowM0();
             switch (M.ReadOpt()) {
                 case 1:
@@ -61,7 +62,8 @@ public class Practica86 {
                 case 3:
                     menu0 = false;
                     System.out.println("Exiting");
-            
+
             }
         }
-    }}
+    }
+}
