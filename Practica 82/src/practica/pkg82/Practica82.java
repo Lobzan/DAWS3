@@ -25,33 +25,28 @@ public class Practica82 {
 
         double amount = 12553;
 
-        //esto deberia ir en una funcion a la que le pasas el arrayList de ints e inicializa
+        //esto deberia ir en una funcion a la que le pasas el arrayList de los valores de las monedas e inicializa.
         for (int i = 0; i < values.size(); i++) {
             monedas.add(new Cambio(values.get(i), 0));
         }
-        
+
         /* For each alternativo sin indices
         for (int value : values){
               monedas.add(new Cambio(value, 0));    
         }*/
-        
-        
-        
         double total = amount;
         double resto = total;
 
         for (int i = 0; i < values.size(); i++) {
 
-           monedas.get(i).setAmount((int) (resto / values.get(i)));
-            resto -= monedas.get(i).getAmount() * monedas.get(i).getValue();  
-      
+            monedas.get(i).setAmount((int) (resto / values.get(i)));
+            resto -= monedas.get(i).getAmount() * monedas.get(i).getValue();
+
         }
-        
-    
-      
+
         //for (int i = 0; i < monedas.size(); i++) {
-       // System.out.println("\n" + monedas.get(i).toString());
-        for ( Cambio moneda : monedas) {
+        // System.out.println("\n" + monedas.get(i).toString());
+        for (Cambio moneda : monedas) {
             System.out.println("\n" + moneda.toString());
         }
 
