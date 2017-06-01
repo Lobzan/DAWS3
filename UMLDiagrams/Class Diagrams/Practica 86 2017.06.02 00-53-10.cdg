@@ -2,20 +2,7 @@
 
 <ClassDiagram name="Practica 86">
   <ClassDiagramComponents>
-    <Class name="Menu" package="practica.pkg86" visibility="public" xPosition="20.0" yPosition="20.0">
-      <Fields>
-        <Field name="teclado" type="Scanner" visibility="package"/>
-      </Fields>
-      <Constructors/>
-      <Methods>
-        <Method name="ShowM0" returnType="void" visibility="public"/>
-        <Method name="ShowM" returnType="void" visibility="public"/>
-        <Method name="ReadOpt" returnType="int" visibility="public"/>
-        <Method name="ReadNum" returnType="int" visibility="public"/>
-        <Method name="ReadChar" returnType="char" visibility="public"/>
-      </Methods>
-    </Class>
-    <Class name="Contador" package="practica.pkg86" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Contador" package="practica.pkg86" visibility="public" xPosition="20.0" yPosition="20.0">
       <Fields>
         <Field name="teclado" type="Scanner" visibility="package"/>
         <Field name="count" type="int" visibility="package"/>
@@ -39,7 +26,20 @@
         <Method name="resetCount" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Practica86" package="practica.pkg86" visibility="public" xPosition="20.0" yPosition="235.0">
+    <Class name="Menu" package="practica.pkg86" visibility="public" xPosition="258.0" yPosition="152.0">
+      <Fields>
+        <Field name="teclado" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ShowM0" returnType="void" visibility="public"/>
+        <Method name="ShowM" returnType="void" visibility="public"/>
+        <Method name="ReadOpt" returnType="int" visibility="public"/>
+        <Method name="ReadNum" returnType="int" visibility="public"/>
+        <Method name="ReadChar" returnType="char" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica86" package="practica.pkg86" visibility="public" xPosition="241.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>

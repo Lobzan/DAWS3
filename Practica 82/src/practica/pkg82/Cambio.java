@@ -19,14 +19,7 @@ public class Cambio {
     public Cambio() {
 
     }
-
-    /*public fillValues(){
-      
-      for(int i=0; i<values.size(); i++){
-          values.get(i);
-       }
-      return b;
-  }    */
+  
     public Cambio(int value, int amount) {
         this.value = value;
         this.amount = amount;
@@ -47,11 +40,7 @@ public class Cambio {
     public void setAmount(int amount) {
         this.amount = amount;
     }
-
-    public void doMath(ArrayList<Cambio> monedas) {
-
-    }
-
+ 
     @Override
     public String toString() {               
         return this.amount + " monedas de " + this.value;

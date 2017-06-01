@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica 80">
+  <ClassDiagramComponents>
+    <Class name="Areacalc" package="practica.pkg80" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="lado" type="double" visibility="package"/>
+        <Field name="resultArea" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="lado"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="GetArea" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica80" package="practica.pkg80" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

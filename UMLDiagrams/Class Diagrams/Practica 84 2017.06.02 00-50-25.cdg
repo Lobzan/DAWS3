@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica 84">
+  <ClassDiagramComponents>
+    <Class name="Account" package="practica.pkg84" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="firstSurname" type="String" visibility="private"/>
+        <Field name="secondSurname" type="String" visibility="private"/>
+        <Field name="dni" type="String" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="accountNumber" type="long" visibility="private"/>
+        <Field name="interest" type="double" visibility="private"/>
+        <Field name="credit" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="firstSurname"/>
+          <Argument type="String" name="secondSurname"/>
+          <Argument type="String" name="dni"/>
+          <Argument type="String" name="type"/>
+          <Argument type="long" name="accountNumber"/>
+          <Argument type="double" name="interest"/>
+          <Argument type="double" name="credit"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="Account" name="account"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="fillAccount" returnType="void" visibility="public"/>
+        <Method name="setDeposit" returnType="void" visibility="public">
+          <Argument type="double" name="ammount"/>
+        </Method>
+        <Method name="setCharge" returnType="void" visibility="public">
+          <Argument type="double" name="ammount"/>
+        </Method>
+        <Method name="doTransfer" returnType="void" visibility="public">
+          <Argument type="Account" name="targetAccount"/>
+          <Argument type="double" name="ammount"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getFirstSurname" returnType="String" visibility="public"/>
+        <Method name="getSecondSurname" returnType="String" visibility="public"/>
+        <Method name="getDni" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="getAccountNumber" returnType="long" visibility="public"/>
+        <Method name="getInterest" returnType="double" visibility="public"/>
+        <Method name="getCredit" returnType="double" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="setFirstSurname" returnType="void" visibility="public">
+          <Argument type="String" name="firstSurname"/>
+        </Method>
+        <Method name="setSecondSurname" returnType="void" visibility="public">
+          <Argument type="String" name="secondSurname"/>
+        </Method>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="String" name="dni"/>
+        </Method>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="setAccountNumber" returnType="void" visibility="public">
+          <Argument type="long" name="accountNumber"/>
+        </Method>
+        <Method name="setInterest" returnType="void" visibility="public">
+          <Argument type="double" name="interest"/>
+        </Method>
+        <Method name="setCredit" returnType="void" visibility="public">
+          <Argument type="double" name="credit"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="practica.pkg84" visibility="public" xPosition="419.0" yPosition="390.0">
+      <Fields>
+        <Field name="teclado" type="Scanner" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="ShowM1" returnType="void" visibility="public"/>
+        <Method name="ShowM2" returnType="void" visibility="public"/>
+        <Method name="ReadOpt" returnType="int" visibility="public"/>
+        <Method name="ReadNum" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica84" package="practica.pkg84" visibility="public" xPosition="617.0" yPosition="390.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

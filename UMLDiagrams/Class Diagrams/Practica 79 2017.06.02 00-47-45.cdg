@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ClassDiagram name="Practica78">
+<ClassDiagram name="Practica 79">
   <ClassDiagramComponents>
-    <Class name="triangulo" package="practica78" visibility="public" xPosition="20.0" yPosition="20.0">
+    <Class name="areacalc" package="practica.pkg79" visibility="public" xPosition="20.0" yPosition="20.0">
       <Fields>
         <Field name="base" type="double" visibility="package"/>
         <Field name="altura" type="double" visibility="package"/>
-        <Field name="resultado" type="double" visibility="package"/>
+        <Field name="resultarea" type="double" visibility="package"/>
       </Fields>
-      <Constructors/>
-      <Methods>
-        <Method name="SetArea" returnType="void" visibility="public">
+      <Constructors>
+        <Constructor visibility="public">
           <Argument type="double" name="base"/>
           <Argument type="double" name="altura"/>
-        </Method>
-        <Method name="GetResultado" returnType="double" visibility="public"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="GetArea" returnType="double" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Practica78" package="practica78" visibility="public" xPosition="320.0" yPosition="20.0">
+    <Class name="Practica79" package="practica.pkg79" visibility="public" xPosition="320.0" yPosition="20.0">
       <Fields/>
       <Constructors/>
       <Methods>

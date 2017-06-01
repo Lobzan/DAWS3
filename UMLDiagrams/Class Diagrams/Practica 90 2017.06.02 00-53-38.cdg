@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Practica 90">
+  <ClassDiagramComponents>
+    <Class name="DNI" package="practica.pkg90" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="DNI" type="String" visibility="private" isFinal="true"/>
+        <Field name="controlDigit" type="String" visibility="private" isFinal="true"/>
+        <Field name="letter" type="char" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="DNI"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="check" returnType="void" visibility="private"/>
+        <Method name="getLetter" returnType="char" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Practica90" package="practica.pkg90" visibility="public" xPosition="201.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
