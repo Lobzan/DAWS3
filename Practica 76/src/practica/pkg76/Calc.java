@@ -5,7 +5,6 @@
  */
 package practica.pkg76;
 
-import java.util.Scanner;
 /** * * @author Luis Gordo - alu20486860r@ieselcaminas.org */
 public class Calc {
 

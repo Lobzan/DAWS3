@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package practica.pkg82;
-
-import java.util.ArrayList;
-
 /**
  *
  * @author Lobo

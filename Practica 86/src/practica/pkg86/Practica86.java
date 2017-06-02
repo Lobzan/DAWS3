@@ -62,6 +62,7 @@ public class Practica86 {
                 case 3:
                     menu0 = false;
                     System.out.println("Exiting");
+                    
 
             }
         }
